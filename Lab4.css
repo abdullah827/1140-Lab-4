@@ -1,0 +1,107 @@
+.firt {
+    border: 1px solid #000;
+    background-color: yellow;
+    width: 40%;
+    padding: 30px;
+    font-size: 25px;
+
+}
+
+.fist a + div {
+    display: none;
+}
+
+.fist	a:hover + div {
+    display: block;
+    color: #000;
+    transform: rotate(180deg);
+    margin-top: -150px;
+}
+.heading {
+    text-align: center;
+    color: red;
+}
+
+.rotate {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.rotate:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+
+.img1:hover {
+    opacity: 0.4;
+}
+
+.img2:hover {
+    filter: blur(4px);
+}
+
+.img3:hover {
+    filter: grayscale(100%);
+}
+
+.effect {
+
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.polarize {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.text {
+    padding: 15px;
+}
+
+div.gallery {
+    margin: 0px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 24%;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.gal {
+    width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    div.gallery {
+        width: 24%;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+    div.gallery {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    div.gallery {
+        width: 96%;
+    }
+}
